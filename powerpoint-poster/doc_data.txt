@@ -1,0 +1,11 @@
+InfoKey: Creator
+InfoValue: Adobe InDesign CS6 (Macintosh)
+InfoKey: Producer
+InfoValue: Adobe PDF Library 10.0.1
+InfoKey: ModDate
+InfoValue: D:20140409141404+01'00'
+InfoKey: CreationDate
+InfoValue: D:20140409141215+01'00'
+PdfID0: ee73f6d18ec8441884ccaf5b7ea970
+PdfID1: 138fa171c07240db845aae3ea94b683d
+NumberOfPages: 3

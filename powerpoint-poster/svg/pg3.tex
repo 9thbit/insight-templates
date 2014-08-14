@@ -1,33 +1,11 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% a0poster Portrait Poster
-% LaTeX Template
-% Version 1.0 (22/06/13)
-%
-% The a0poster class was created by:
-% Gerlinde Kettl and Matthias Weiser (tex@kettl.de)
-% 
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a0,portrait]{a0poster}
-
-\usepackage{ubuntu} % Use the Ubuntu font
-
-\usepackage{graphicx} % Required for including images
-\graphicspath{{figures/}} % Location of the graphics files
+\documentclass[12pt,portrait]{article}
+\usepackage[a3paper]{geometry}
 
 \usepackage[utf8]{inputenc}
 \usepackage{tikz}
 
 \begin{document}
-
-%----------------------------------------------------------------------------------------
-
 \definecolor{cffffff}{RGB}{255,255,255}
 \definecolor{cf04cae}{RGB}{240,76,174}
 \definecolor{c211e1e}{RGB}{33,30,30}
@@ -41,7 +19,7 @@
 \definecolor{ceb008a}{RGB}{235,0,138}
 
 
-\begin{tikzpicture}[y=1pt,x=1pt,yscale=-1]
+\begin{tikzpicture}[y=0.80pt,x=0.80pt,yscale=-1, inner sep=0pt, outer sep=0pt]
 \begin{scope}% surface1
   \begin{scope}% g583
     % path585
@@ -519,5 +497,5 @@
 \end{scope}
 
 \end{tikzpicture}
-
 \end{document}
+
