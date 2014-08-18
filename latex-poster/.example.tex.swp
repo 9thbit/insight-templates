@@ -1,0 +1,127 @@
+\documentclass[final,hyperref={pdfpagelabels=false}]{beamer}
+\mode<presentation>{\usetheme{Insight}}
+%\usepackage{ubuntufont/ubuntu}
+\usepackage{amsmath,amsthm, amssymb, latexsym}
+\boldmath
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[orientation=portrait,size=a1,scale=1.4,debug]{beamerposter}
+\usepackage{tikz}
+\usepackage{graphics}
+\usepackage{overpic}
+\usepackage{epstopdf}
+\usepackage{setspace}
+\usepackage{ragged2e}
+
+\addtobeamertemplate{block begin}{}{\justifying}  %new code
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\graphicspath{{figures/}}
+\title{Adaptive Representations for\\Tracking Breaking News on Twitter}
+\author{Igor Brigadir, Derek Greene, P\'{a}draig Cunningham}
+\institute[Insight]{Centre for\\Data Analytics}
+\date{Aug. 31st, 2014}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\begin{document}
+
+\begin{frame}{}
+  
+    % Two Columns:
+
+    \begin{columns}[T]
+    
+      
+      \begin{column}{.43\paperwidth}
+        \begin{block}{Large Headings typeset in Ubuntu Regular, at 18 point on 21 point line spacing}
+
+All point sizes listed here are based on the A3-sized document template file. Body Text paragraphs are typest in Ubuntu Light, at 10 point on 16 point line space with 5 points space after.Body Text paragraphs are typest in Ubuntu Light, at 10 point on 16 point line space with 5 points space after. Body Text paragraphs are typest in Ubuntu Light, at 10 point on 16 point line space with 5 points space after. Body Text paragraphs are typest i
+
+        \end{block}
+      \end{column}
+      
+      
+      \begin{column}{.43\paperwidth}
+      
+       \begin{block}{Large Headings typeset in Ubuntu Regular, at 18 point on 21 point line spacing}
+
+All point sizes listed here are based on the A3-sized document template file. Body Text paragraphs are typest in Ubuntu Light, at 10 point on 16 point line space with 5 points space after.Body Text paragraphs are typest in Ubuntu Light, at 10 point on 16 point line space with 5 points space after. Body Text paragraphs are typest in Ubuntu Light, at 10 point on 16 point line space with 5 points space after. Body Text paragraphs are typest i
+
+        \end{block}
+      
+        \begin{block}{Introduction}
+          \begin{itemize}
+          \item some items and $\alpha=\gamma, \sum_{i}$
+          \item some items
+          \item some items
+          \item some items
+          \end{itemize}
+          $$\alpha=\gamma, \sum_{i}$$
+        \end{block}
+
+        \begin{block}{Introduction}
+        
+          \begin{itemize}
+          \item some items
+          \item some items
+          \item some items
+          \item some items
+          \end{itemize}
+          
+        \end{block}
+
+        \begin{block}{Introduction}
+        
+          \begin{itemize}
+          \item some items and $\alpha=\gamma, \sum_{i}$
+          \item some items
+          \item some items
+          \item some items
+          \end{itemize}
+          $$\alpha=\gamma, \sum_{i}$$
+          
+        \end{block}
+        
+      \end{column}
+            
+      
+    \end{columns}
+    
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+  % Single column
+  
+    \vfill
+    \begin{block}{\large Fontsizes}
+      \centering
+      {\tiny tiny}\par
+      {\scriptsize scriptsize}\par
+      {\footnotesize footnotesize}\par
+      {\normalsize normalsize}\par
+      {\large large}\par
+      {\Large Large}\par
+      {\LARGE LARGE}\par
+      {\veryHuge VeryHuge}\par
+      {\VeryHuge VeryHuge}\par
+      {\VERYHuge VERYHuge}\par
+           
+    \end{block}
+ 
+    \vfill
+    
+    \begin{block}{\large Fontsizes}
+      \centering
+      {\tiny tiny}\par
+      {\scriptsize scriptsize}\par
+      {\footnotesize footnotesize}\par
+      {\normalsize normalsize}\par
+      {\large large}\par
+      {\Large Large}\par
+      {\LARGE LARGE}\par
+      {\veryHuge VeryHuge}\par
+      {\VeryHuge VeryHuge}\par
+      {\VERYHuge VERYHuge}\par
+    \end{block}
+        
+    
+\end{frame}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

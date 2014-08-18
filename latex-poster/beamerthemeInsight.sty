@@ -1,0 +1,134 @@
+\ProvidesPackage{beamerthemeInsight} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{insightcolours}
+\selectcolormodel{cmyk}
+\mode<presentation>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{headline}{fg=white,bg=pantone_124_16}
+\setbeamercolor{title in headline}{fg=white}
+\setbeamercolor{author in headline}{fg=pantone_120_2}
+\setbeamercolor{institute in headline}{fg=pantone_120_2}
+
+\setbeamercolor*{block title}{fg=pantone_117_8,bg=white}
+\setbeamerfont{block title}{size=\large,series=\bf}
+\setbeamercolor*{normal text}{fg=black, bg=white}
+
+
+\setbeamercolor{framesubtitle}{fg=pantone_127_4, bg=white}
+
+\setbeamercolor{footline}{fg=pantone_124_16, bg=white}
+\setbeamerfont{footline}{size=\large,series=\tt}
+
+\setbeamercolor{author in head/foot}{fg=pantone_120_2, bg=white}
+\setbeamercolor{title in head/foot}{fg=pantone_120_2, bg=white}
+
+\setbeamertemplate{itemize items}[triangle]
+
+\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Blocks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{block begin}{
+\begin{beamercolorbox}[rounded=true,shadow=false]{block title}%
+
+\usebeamerfont*{block title}\insertblocktitle
+\end{beamercolorbox}%
+
+{\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+
+\usebeamerfont{block body}
+\begin{beamercolorbox}[rounded=true,shadow=false,colsep*=.75ex]{block body}%
+
+\ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+
+}
+  
+\setbeamertemplate{block end}{
+\end{beamercolorbox}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Header:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{headline}{  
+\leavevmode
+
+\begin{overpic}[width=\paperwidth]{header2}  %% debug: ,grid,tics=1
+
+% Mesh Pattern
+\put(20,1.5){
+\begin{tikzpicture}[y=1pt,x=1pt,yscale=-0.65,xscale=0.65, inner sep=0pt, outer sep=0pt]
+\clip (2100,900) rectangle (10,250);
+\input{meshpattern.tikz}
+\end{tikzpicture}
+}
+
+% Title, Author, Logo
+\put(0,26){
+\begin{columns}[T]
+%Title
+\begin{column}{0.675\linewidth}
+        \vskip10em        
+        \raggedright        
+        \usebeamercolor{title in headline}{\color{fg}\veryHuge{\inserttitle}\\[1ex]}
+        \vskip2em
+        \usebeamercolor{author in headline}{\color{fg}\LARGE{\insertauthor}\\[1ex]}
+\end{column}
+
+%      %Logo
+%      \begin{column}{0.2\linewidth}
+	  
+%		\usebeamerfont*{block title}
+%	   	\vskip1.5em
+%       \usebeamercolor{institute in headline}{\color{fg}\normalsize{Centre for \\[5pt] Data Analytics}\\[1ex]}
+%        \vskip2em
+%        \includegraphics[width=.875\linewidth]{insightlogo}
+%       \vskip0.5em
+%        \end{column}
+\end{columns}
+}
+
+
+\put(20,1){
+		
+
+ \includegraphics[width=50em]{insightlogo}
+	
+	%\usebeamerfont*{block title}
+	%\usebeamercolor{institute in headline}{\color{fg}\normalsize{Centre for \\[5pt] Data Analytics}\\[1ex]}
+  
+}
+
+%\put(10,26) {
+%	\begin{mdframed}[roundcorner=20pt,innertopmargin=5em,innerbottommargin=2em,innerleftmargin=2em]
+%	%\usebeamerfont*{block title}
+%	\usebeamercolor{institute in headline}{\color{fg}\normalsize{Centre for \\[5pt] Data Analytics}\\[1ex]}
+%    \includegraphics[width=.875\linewidth]{insightlogo}
+%    \end{mdframed}
+%}
+
+\end{overpic}
+
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Footer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{footline}{
+\begin{overpic}[width=\paperwidth]{footer}
+
+   \begin{beamercolorbox}[ht=4ex,leftskip=1cm,rightskip=1cm]{author in head/foot}%
+    \texttt{http://www-i6.informatik.rwth-aachen.de}
+    \hfill
+    \texttt{\{dreuw,deselaers\}@cs.rwth-aachen.de}
+    \vskip1ex
+  \end{beamercolorbox}
+  
+\end{overpic}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Display a grid to help align images ... and it looks nice with this color scheme
+\beamertemplategridbackground[1em]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<all>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
