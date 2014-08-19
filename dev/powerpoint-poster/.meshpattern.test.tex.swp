@@ -1,0 +1,20 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+
+%% Mesh Pattern
+\definecolor{mesh2} {cmyk} {0.5122,0.1707,0.0000,0.3569}
+\definecolor{mesh1} {cmyk} {0.8230,0.0354,0.0000,0.5569}
+\definecolor{pantone_124_16} {cmyk} {1.0000,0.0065,0.0000,0.4000}
+
+\begin{document}
+
+
+\begin{tikzpicture}[y=1pt,x=1pt,yscale=-0.6,xscale=0.6,inner sep=0pt,outer sep=0pt,opacity=0.5]
+\clip (1200,400) rectangle (250,200);
+\input{meshpattern.tikz}
+\end{tikzpicture}
+
+\end{document}
+

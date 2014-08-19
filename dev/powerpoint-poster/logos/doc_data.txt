@@ -1,0 +1,20 @@
+InfoKey: Creator
+InfoValue: QuarkXPress(tm) 4.1
+InfoKey: Title
+InfoValue: 9501 UCD Brand Guidelines Two
+InfoKey: Producer
+InfoValue: Acrobat Distiller 5.0.5 for Macintosh
+InfoKey: Author
+InfoValue: BFK Strategic Design
+InfoKey: Subject
+InfoValue: Release Two. 13 September 2005
+InfoKey: ModDate
+InfoValue: D:20050914161035+01'00'
+InfoKey: CreationDate
+InfoValue: D:20050913091412Z
+PdfID0: cb57f3de03441f346e4a45e1cbfb324
+PdfID1: b2978e81bfdba9dc59e894c67eede9dc
+NumberOfPages: 30
+PageLabelNewIndex: 1
+PageLabelStart: 1
+PageLabelNumStyle: DecimalArabicNumerals
