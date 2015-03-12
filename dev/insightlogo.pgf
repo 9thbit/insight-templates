@@ -1,0 +1,9 @@
+% Created by Eps2pgf 0.7.0 (build on 2008-08-24) on Tue Aug 19 18:46:30 UTC 2014
+\begin{pgfpicture}
+\pgfpathmoveto{\pgfqpoint{0cm}{0cm}}
+\pgfpathlineto{\pgfqpoint{10cm}{0cm}}
+\pgfpathlineto{\pgfqpoint{10cm}{4.909cm}}
+\pgfpathlineto{\pgfqpoint{0cm}{4.909cm}}
+\pgfpathclose
+\pgfusepath{clip}
+\end{pgfpicture}
